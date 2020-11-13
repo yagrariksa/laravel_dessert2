@@ -92,6 +92,15 @@ class AdminController extends Controller
         $data->available = ($request->ketersediaan == 'true') ? true : false;
         $data->category = $request->kategori;
         $data->imagelink = $request->imagelink;
+        $data->imagelink2 = $request->imagelink2;
+        $data->imagelink3 = $request->imagelink3;
+        $data->imagelink4 = $request->imagelink4;
+        $data->imagelink5 = $request->imagelink5;
+        $data->imagelink6 = $request->imagelink6;
+        $data->imagelink7 = $request->imagelink7;
+        $data->imagelink8 = $request->imagelink8;
+        $data->imagelink9 = $request->imagelink9;
+        $data->imagelink10 = $request->imagelink10;
         $data->desc = $request->desc;
         $data->save();
 
@@ -118,6 +127,15 @@ class AdminController extends Controller
         $data->available = ($request->ketersediaan == 'true') ? true : false;
         $data->category = $request->kategori;
         $data->imagelink = $request->imagelink;
+        $data->imagelink2 = $request->imagelink2;
+        $data->imagelink3 = $request->imagelink3;
+        $data->imagelink4 = $request->imagelink4;
+        $data->imagelink5 = $request->imagelink5;
+        $data->imagelink6 = $request->imagelink6;
+        $data->imagelink7 = $request->imagelink7;
+        $data->imagelink8 = $request->imagelink8;
+        $data->imagelink9 = $request->imagelink9;
+        $data->imagelink10 = $request->imagelink10;
         $data->desc = $request->desc;
         $data->save();
 

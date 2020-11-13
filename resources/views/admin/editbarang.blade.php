@@ -38,6 +38,25 @@
             <div class="label text t-m t-uppercase">ID Foto Barang</div>
             <small>gunakan ID gambar seperti petunjuk yang sudah diberikan</small> <br>
             <input type="text" name="imagelink" value="{{$data->imagelink}}">
+
+            <div class="label text t-m t-uppercase">ID Foto Barang 2</div>
+            <input type="text" name="imagelink2" value="{{$data->imagelink2}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 3</div>
+            <input type="text" name="imagelink3" value="{{$data->imagelink3}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 4</div>
+            <input type="text" name="imagelink4" value="{{$data->imagelink4}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 5</div>
+            <input type="text" name="imagelink5" value="{{$data->imagelink5}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 6</div>
+            <input type="text" name="imagelink6" value="{{$data->imagelink6}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 7</div>
+            <input type="text" name="imagelink7" value="{{$data->imagelink7}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 8</div>
+            <input type="text" name="imagelink8" value="{{$data->imagelink8}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 9</div>
+            <input type="text" name="imagelink9" value="{{$data->imagelink9}}">
+            <div class="label text t-m t-uppercase">ID Foto Barang 10</div>
+            <input type="text" name="imagelink10" value="{{$data->imagelink10}}">
     
             <button type="submit" class="btn btn-save text t-sm" style="width: fit-content;">
                 Simpan perubahan

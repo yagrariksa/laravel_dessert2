@@ -2,10 +2,22 @@
     <div class="container">
         <div class="row bag-1">
             <div class="col left">
-                <img src="https://drive.google.com/uc?export=view&id={{$data->imagelink}}" alt="">
-                <div class="description">
-                    {{$data->desc}}
+                <img id="mainimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink}}" alt="">
+                <div class="imglist" id="fotoproduct"> 
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink2}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink3}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink4}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink5}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink6}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink7}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink8}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink9}}" alt="">
+                    <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink10}}" alt="">
                 </div>
+                {{-- <div class="description" id="descproduct">
+                    {{$data->desc}}
+                </div> --}}
             </div>
             <div class="col">
                 <form method="POST" action="/addtocart">
@@ -14,7 +26,7 @@
                 <div class="product-name">{{$data->name}} 
                     <div class="subtitle">{{$category->category}}</div>
                 </div>
-                <div class="product-price">Rp. {{$data->price}}</div>
+                <div class="product-price" id="productprice">Rp. {{$data->price}}</div>
 
                 <div class="label" for="label">QTY</div>
                 <input type="text" name='id' hidden value={{$data->id}}>
@@ -42,7 +54,7 @@
 
                 <div class="btn-group">
                     <button type="submit" id="adtucart" class="btn">ADD TO CHART</button>
-                    <div class="btn" id="gaskeun">BUY NOW {{$data->id}}</div>
+                    <div class="btn" id="gaskeun">BUY NOW</div>
                 </div>
                 </form>
             </div>

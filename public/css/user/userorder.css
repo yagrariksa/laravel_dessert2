@@ -79,12 +79,11 @@
 }
 
 button {
-    padding: 5px;
+    padding: 5px 10px;
     margin-left: 5px;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: #1f1f1f;
     color: white;
-
 }
 
 button:hover {
@@ -161,7 +160,7 @@ button:hover {
     }
 
     .container {
-        transform: scale(0.7) translateY(-150px);
+        transform: scale(0.7) translateY(-190px) translateX(-50px);
         margin: 0;
         padding: 0;
         position: relative;

@@ -113,7 +113,7 @@ class UserController extends Controller
             }
         }
 
-        $beli->desc = join(", ", array_slice($arabos, 3));
+        $beli->desc = join(", ", array_slice($arabos, 4));
         $oldcart = $request->session()->get('cart', '');
         $cart = new Cart($oldcart);
         $cart->addBarang($beli);

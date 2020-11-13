@@ -1,6 +1,7 @@
 <div>
     <div class="navbar">
         <div class="logo">
+            <img id="menubtn" src="{{ asset('img/menubtn.png') }}" alt="">
             <a href="/">
                 <img src="{{ asset('img/logo.png') }}" alt="">
             </a>
@@ -13,10 +14,10 @@
         </div>
         <div class="keranjang">
             @if (Session::has('cart'))
-            <h5 style="margin-right: 5px; padding:3px; border-radius: 10px; background-color: black; color: white; cursor:default; text-align: center"> 
+            <div id="angkacart"> 
                     {{Session::get('cart')->qty}}
                     {{-- {{dd(Session::get('cart','kosong'))}} --}}
-                </h5>
+                </div>
             @endif
             <a href="/cart">
                 <img src="{{ asset('img/keranjang.png') }}" alt="">
@@ -24,7 +25,7 @@
         </div>
     </div>
 
-    <div class="nav">
+    <div class="nav" id="navkuy">
         <a href="/">Home</a>
         <a href="/lowcal">Low Calorie</a>
         <a href="/custom">Custom Dessert</a>
@@ -32,7 +33,7 @@
         <a href="/order">My Order</a>
     </div>
 
-    <small># {{$aksi}} # {{$cari}} # {{$livesearch}} # </small>
+    {{-- <small># {{$aksi}} # {{$cari}} # {{$livesearch}} # </small> --}}
     @if ($aksi)
         @if (sizeof($livesearch) != 0)   
         <div class="container special">

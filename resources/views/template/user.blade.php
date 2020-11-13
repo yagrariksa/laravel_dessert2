@@ -21,6 +21,15 @@
     </footer>
     
     @yield('js')
+<script> 
+    var menunya = false;
+    var menubtn = document.getElementById('menubtn');
+    var navkuy = document.getElementById('navkuy');
+    menubtn.addEventListener('click',function(){
+        navkuy.classList.toggle('activate');
+        menubtn.classList.toggle('activate');
+    })
+</script>
     @livewireScripts
 </body>
 </html>
