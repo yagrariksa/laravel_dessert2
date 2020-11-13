@@ -1,0 +1,62 @@
+.container {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .card {
+    padding: 50px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid black;
+}
+
+.col.right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    transition: 100ms all ease-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(255, 55, 55);
+    color: white;
+}
+
+.btn.btn-delete {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+.col .option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.btn.btn-checkout {
+    width: fit-content;
+    align-self: flex-end;
+    border: 0;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-size: 32px;
+    transform: translateX(-10px);
+}
+
+.btn.btn-checkout:hover {
+    background-color: rgb(81, 81, 81);
+    transform: translateX(10px);
+}

@@ -1,0 +1,119 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name {
+    font-size: 32px;
+    cursor: default;
+}
+
+.product-price {
+    font-size: 24px;
+    cursor: default;
+}
+
+.row {
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.row.bag-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row.bag-1 .col.left {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.row.bag-1 .col.left img {
+    width: 300px;
+    height: 300px;
+}
+
+.description {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.row.bag-1 .col .product-name .subtitle {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.row.bag-1 .col .product-price {
+    margin-bottom: 30px;
+}
+
+.row.bag-1 .col .label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    transform: translateX(20px);
+    cursor: default;
+
+}
+
+.row.bag-1 .col input {
+    height: 20px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.row.bag-1 .col input:focus {
+    /* background-color: yellow; */
+    border: 0;
+}
+
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btn-group .btn {
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    transition: 100ms ease-out all;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.pilihan {
+    margin-right: 20px;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+select {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}

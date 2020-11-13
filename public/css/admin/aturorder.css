@@ -1,0 +1,207 @@
+.wide-container {
+    width: 95%;
+    grid-template-columns: 1fr 5fr;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+    border-color: transparent transparent black transparent;
+
+}
+
+th,
+td {
+    padding: 5px 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+th:nth-child(2n) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+th.kode {
+    width: 15%;
+}
+
+th.nama {
+    width: 30%;
+}
+
+th.status {
+    width: 30%;
+}
+
+th.total {
+    width: 15%;
+}
+
+th.aksi {
+    width: 10%;
+}
+
+td .btn {
+    background-color: rgb(154, 255, 154);
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+td .btn:hover {
+    background-color: rgb(81, 241, 81);
+}
+
+tbody tr:nth-child(2n) {
+    background-color: rgba(0, 233, 225, 0.1);
+}
+
+
+
+#container {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: fit-content;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 100px; */
+}
+
+
+#container .col {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 100px; */
+    margin: 30px 50px 0 0;
+}
+
+#container .col .info {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    padding-left: 10px;
+    transform: translateY(-10px);
+}
+
+
+#container .col h1 {
+    margin-bottom: 20px;
+}
+
+#container .col .form-group {
+    margin-bottom: 20px;
+}
+
+#container .col .form-group .label,
+#container .col .form-group .info-user {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+#container .col .form-group .label {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#container .col .form-group .info-user {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+
+}
+
+#container .col .row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row .card {
+    border-radius: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.row .card .title {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.row .card .body {
+    padding: 10px 30px;
+    padding-bottom: 0;
+}
+
+.row .card .items {
+    margin-bottom: 20px;
+}
+
+.row .card .items .item-title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.row .card .price {
+    padding: 0 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.btn {
+    transition: all ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.btn.btn-next {
+    align-self: flex-end;
+    padding: 10px 30px;
+    width: fit-content;
+    background-color: rgb(224, 144, 68);
+    color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.btn.btn-next:hover {
+    background-color: rgba(224, 144, 68, 0.6);
+    color: black;
+}
+
+ button {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+        background-color: #1f1f1f;
+        color: white;
+
+}
+
+ button:hover {
+    background-color: #f1f1f1;
+            color: black;
+
+}
+
+select {
+    padding: 10px;
+    margin: 10px 0;
+}

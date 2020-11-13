@@ -1,0 +1,72 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.iklan {
+    height: 400px;
+    max-height: 400px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    display: none;
+}
+
+.iklan-gambar {
+    background-color: blue;
+}
+
+.pengumuman {
+    background-color: chartreuse;
+    font-size: 28px;
+    text-align: center;
+    align-self: center;
+    padding: 20px;
+}
+
+.barang {
+    margin-top: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.card {
+    width: 200px;
+    height: fit-content;
+    border: 1px solid #1f1f1f;
+    border-radius: 10px;
+    transition: all 0.1s ease-out;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 3px solid black;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+}
+
+.card h3,
+h4 {
+    text-align: center;
+}
+@media(max-width:500px){
+    .card {
+        width: 120px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+    .barang {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

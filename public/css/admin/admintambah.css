@@ -1,0 +1,56 @@
+.main-content {}
+
+.main-content .label {}
+
+.main-content input {
+    border: 0;
+}
+
+.main-content input[type=text],
+.main-content input[type=number] {
+    width: 300px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-content textarea {
+    width: 300px;
+    height: 200px;
+    resize: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0;
+}
+
+.main-content input#file-type {
+    display: none;
+}
+
+.main-content input#file-upload {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.main-content input#file-upload:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-content .btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    width: 100px;
+    border: 1px solid black;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.main-content .btn.btn-save:hover {
+    background-color: rgb(95, 255, 95);
+}

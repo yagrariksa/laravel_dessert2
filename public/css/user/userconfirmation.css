@@ -1,0 +1,116 @@
+.container {
+    margin: 0 auto;
+    width: fit-content;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 100px; */
+}
+
+.col h1 {
+    margin-bottom: 20px;
+}
+
+.col .form-group {
+    margin-bottom: 15px;
+}
+
+.col .form-group .label {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.col .form-group input {
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: .35s ease-in-out;
+    box-sizing: border-box;
+}
+
+.col .form-group input:focus,
+.col .form-group textarea:focus {
+    border: 0;
+}
+
+.col .form-group textarea {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 20px;
+    resize: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.row .card {
+    border-radius: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.row .card .title {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.row .card .body {
+    padding: 10px 30px;
+    padding-bottom: 0;
+}
+
+.row .card .items {
+    margin-bottom: 20px;
+}
+
+.row .card .items .item-title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.row .card .price {
+    padding: 0 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.btn {
+    transition: all ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.btn.btn-next {
+    align-self: flex-end;
+    padding: 10px 30px;
+    width: fit-content;
+    background-color: rgb(224, 144, 68);
+    color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.btn.btn-next:hover {
+    background-color: rgba(224, 144, 68, 0.6);
+    color: black;
+}

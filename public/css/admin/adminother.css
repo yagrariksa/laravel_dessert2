@@ -1,0 +1,98 @@
+.container {
+    width: 90%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.row.top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.row.top .col {
+    align-items: flex-start;
+}
+
+.row.top .col .title {
+    font-size: 24px;
+
+}
+
+.row.top .col select {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.row.top .col input {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.row.top .col .btn.tambahkan {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(84, 250, 84);
+    width: fit-content;
+    text-align: center;
+    transition: all ease-in-out 0.1s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.row.top .col .btn.tambahkan:hover {
+    background-color: rgb(33, 204, 33);
+
+}
+
+.row.top .col .list {
+    font-size: 20px;
+}
+
+.row.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 80%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .title {
+    padding: 5px 20px;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    width: fit-content;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.row.main .title {
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+}
+
+.row.main .opsi {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.row.main .list {
+    margin-bottom: 3px;
+}
