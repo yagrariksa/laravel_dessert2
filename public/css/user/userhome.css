@@ -49,15 +49,16 @@
 }
 
 .card img {
-    height: 200px;
-    width: 200px;
+    height: auto;
+    width: 100%;
 }
 
 .card h3,
 h4 {
     text-align: center;
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
     .card {
         width: 120px;
     }
@@ -66,6 +67,7 @@ h4 {
         width: 100%;
         height: auto;
     }
+
     .barang {
         grid-template-columns: repeat(2, 1fr);
     }

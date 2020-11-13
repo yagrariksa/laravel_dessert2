@@ -31,6 +31,8 @@
         <a href="#" onclick="window.open('https://wa.me/message/53G6V32CFJODL1')" >Payment Confirmation</a>
         <a href="/order">My Order</a>
     </div>
+
+    <small># {{$aksi}} # {{$cari}} # {{$livesearch}} # </small>
     @if ($aksi)
         @if (sizeof($livesearch) != 0)   
         <div class="container special">

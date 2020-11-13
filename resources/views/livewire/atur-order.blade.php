@@ -128,10 +128,12 @@
                                 </div>
                                 <div class="item-details">
                                     <div class="type">
-                                        ##{{$b->benda->category}}##
+                                        DESERT type : {{$b->benda->category}}
                                     </div>
                                     <div class="option">
+                                        @if ($b->deskripsi != null)
                                         >> {{$b->deskripsi}}
+                                        @endif
                                     </div>
                                     <div class="qty">
                                         >> qty : {{$b->qty}}
