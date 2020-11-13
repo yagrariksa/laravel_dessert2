@@ -10,6 +10,7 @@
             <div class="col">
                 <form method="POST" action="/addtocart">
                     @csrf
+                <input id="direct" name="direct" type="text" hidden value="cart">
                 <div class="product-name">{{$data->name}} 
                     <div class="subtitle">{{$category->category}}</div>
                 </div>
@@ -40,8 +41,8 @@
                 </div>
 
                 <div class="btn-group">
-                    <button type="submit" class="btn">ADD TO CHART</button>
-                    <div class="btn">BUY NOW</div>
+                    <button type="submit" id="adtucart" class="btn">ADD TO CHART</button>
+                    <div class="btn" id="gaskeun">BUY NOW {{$data->id}}</div>
                 </div>
                 </form>
             </div>

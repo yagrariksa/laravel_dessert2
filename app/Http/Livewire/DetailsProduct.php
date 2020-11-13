@@ -3,9 +3,12 @@
 namespace App\Http\Livewire;
 
 use App\Models\Barang;
+use App\Models\Barangbeli;
+use App\Models\Cart;
 use App\Models\Category;
 use App\Models\Custom;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 use Livewire\Component;
 
 class DetailsProduct extends Component

@@ -10,6 +10,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    margin-top: 20px;
 }
 
 .card {
@@ -36,7 +37,7 @@ h5 {
     text-align: center;
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     .card {
         width: 120px;
     }
@@ -45,6 +46,7 @@ h5 {
         width: 100%;
         height: auto;
     }
+
     .barang {
         grid-template-columns: repeat(2, 1fr);
     }

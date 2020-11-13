@@ -4,6 +4,14 @@
     margin: 100px auto;
 }
 
+.search {
+    display: none;
+}
+
+.navbar {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .credit {
     max-width: 500px;
     color: rgba(0, 0, 0, 0.5);

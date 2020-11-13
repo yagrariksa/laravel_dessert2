@@ -9,6 +9,14 @@
     gap: 100px;
 }
 
+.search {
+    display: none;
+}
+
+.navbar {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
     padding: 30px;
     width: 300px;
@@ -32,7 +40,7 @@
     text-align: center;
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     .card {
         width: fit-content;
     }
@@ -41,6 +49,7 @@
         width: 100%;
         height: auto;
     }
+
     .barang {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -48,6 +57,7 @@
     .card h1 {
         font-size: 24px;
     }
+
     .container {
         gap: 20px;
     }

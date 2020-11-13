@@ -15,4 +15,12 @@
 
 @section('js')
     {{-- <script src="{{ asset('js/selectform.js') }}"></script> --}}
+    <script>
+        var buynowbtn = document.getElementById('gaskeun');
+        buynowbtn.addEventListener('click',function(){
+            var inputankusus = document.getElementById('direct');
+            inputankusus.setAttribute('value','langsung');
+            document.getElementById('adtucart').click();
+        })
+    </script>
 @endsection

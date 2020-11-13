@@ -122,8 +122,13 @@ class UserController extends Controller
         $request->session()->put('cart', $cart);
         // dd($oldcart, $cart, $request->session()->get('cart', 'kosong'));
 
-        return redirect('/cart');
+        if ($form->direct == 'cart') {
+            return redirect('/cart');
+        } else {
+            return redirect('/confirmation');
+        }
     }
+
     public function getcart(Request $request)
     {
         // $request->session()->put('cart', 'heyho');

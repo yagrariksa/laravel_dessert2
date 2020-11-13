@@ -4,6 +4,15 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.search {
+    display: none;
+}
+
+.navbar {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .container .card {
@@ -61,19 +70,19 @@
     transform: translateX(10px);
 }
 
-@media(max-width: 800px){
-    
-}
+@media(max-width: 800px) {}
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
     .container {
         width: 95%;
     }
-   .container .card { 
+
+    .container .card {
         padding: 10px;
         grid-template-columns: 1fr 1fr;
         min-height: 100px;
     }
+
     h1 {
         font-size: 18px;
     }
@@ -83,6 +92,7 @@
         right: 1px;
         padding: 3px;
     }
+
     a.btn.btn-checkout {
         padding: 5px;
         font-size: 18px;

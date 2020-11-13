@@ -23,6 +23,7 @@
 
 .search {
     justify-self: center;
+    position: relative;
 }
 
 .search input {
@@ -31,6 +32,13 @@
     box-sizing: border-box;
     padding: 20px;
     border-radius: 30px;
+}
+
+.search .cari {
+    position: absolute;
+    right: 0px;
+    right: 20px;
+    top: 25%;
 }
 
 .keranjang {
@@ -61,32 +69,40 @@
     transform: scale(1.1);
 }
 
+.container.special {
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
 footer {
     display: none;
 }
 
-@media(max-width:800px){
+@media(max-width:800px) {
     .search {
-        display:none;
+        display: none;
     }
+
     .navbar {
         display: flex;
         flex-direction: row;
     }
 }
-@media(max-width:500px){
-    
+
+@media(max-width:500px) {
+
     .logo a img {
         width: 200px;
     }
-    
+
     .nav {
-        width:100%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-content: center;
     }
+
     .nav a {
         margin: 5px 0;
         text-align: center;

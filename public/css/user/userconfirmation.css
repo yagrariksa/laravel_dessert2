@@ -7,6 +7,14 @@
     gap: 100px;
 }
 
+.search {
+    display: none;
+}
+
+.navbar {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .col {
     display: flex;
     flex-direction: column;
@@ -115,7 +123,7 @@
     color: black;
 }
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
     .container {
         grid-template-columns: 1fr;
         gap: 30px;

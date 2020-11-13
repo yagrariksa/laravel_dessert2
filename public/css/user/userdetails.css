@@ -7,6 +7,14 @@
     flex-direction: column;
 }
 
+.search {
+    display: none;
+}
+
+.navbar {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .product-name {
     font-size: 32px;
     cursor: default;
