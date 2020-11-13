@@ -114,3 +114,10 @@
     background-color: rgba(224, 144, 68, 0.6);
     color: black;
 }
+
+@media(max-width: 500px){
+    .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

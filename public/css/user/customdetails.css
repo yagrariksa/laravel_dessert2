@@ -2,7 +2,6 @@
     margin: 0 auto;
     width: 80%;
     max-width: 1200px;
-    border: 2px solid black;
     display: flex;
     flex-direction: column;
 }
@@ -116,4 +115,32 @@ select {
     border-radius: 5px;
     background-color: #fff;
     margin-bottom: 10px;
+}
+
+
+@media(max-width: 800px){
+    .row {
+        padding:10px;
+    }
+    .row.bag-1 .col.left img {
+        width:100%;
+        height:auto;
+    }
+}
+@media(max-width: 500px){
+    .row.bag-1 {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    }
+    .col {
+        width: fit-content;
+        max-width: 100%;
+    }
+    .row.bag-1 .col.left {
+        margin:0;
+    }
+    .description {
+        display: none;
+    }
 }
