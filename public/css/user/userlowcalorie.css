@@ -40,7 +40,7 @@ h5 {
 
 @media(max-width:500px) {
     .card {
-        width: 120px;
+        width: fit-content;
     }
 
     .card img {

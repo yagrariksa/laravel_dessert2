@@ -15,9 +15,9 @@
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink9}}" alt="">
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink10}}" alt="">
                 </div>
-                {{-- <div class="description" id="descproduct">
+                <div class="description" id="descunderimg">
                     {{$data->desc}}
-                </div> --}}
+                </div>
             </div>
             <div class="col">
                 <form method="POST" action="/addtocart">
@@ -27,6 +27,10 @@
                     <div class="subtitle">{{$category->category}}</div>
                 </div>
                 <div class="product-price" id="productprice">Rp. {{$data->price}}</div>
+
+                <div class="description" id="descunderprice">
+                    {{$data->desc}}
+                </div>
 
                 <div class="label" for="label">QTY</div>
                 <input type="text" name='id' hidden value={{$data->id}}>

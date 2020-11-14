@@ -24,22 +24,6 @@
         });
 
 
-        var fotoproduct = document.getElementById('fotoproduct');
-        var priceproduct = document.getElementById('productprice');
-        var el = document.createElement("div");
-        el.innerHTML = "heyho";
-        el.classList.add('description');
-
-        const mq = window.matchMedia( "(min-width: 500px)" );
-        if (mq.matches) {
-            el.classList.add('mt');
-            insertAfter(el, fotoproduct);
-            // alert("window width >= 500px");
-        } else {
-            insertAfter(el, priceproduct);
-            // alert("window width < 500px");
-        }
-
         const mainimg = document.querySelector('#mainimage');
         const imglist = document.querySelector('.imglist');
 

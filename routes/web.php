@@ -27,7 +27,9 @@ Route::get('/lowcal', [UserController::class, 'lowcal']);
 Route::get('/custom', [UserController::class, 'custom']);
 Route::get('/order', [UserController::class, 'myorder']);
 
-// Route::get('/addtocart', [UserController::class, 'getcart']);
+Route::get('/addtocart', function () {
+    return redirect('/cart');
+});
 Route::post('/addtocart', [UserController::class, 'addtocart']);
 Route::get('/delete/chart/{id}', [UserController::class, 'deleteitemcart']);
 Route::get('/cart', [UserController::class, 'cart']);
@@ -46,7 +48,7 @@ Route::post('/whoami/regist', [AdminController::class, 'registStore']);
 Route::middleware('auth')->group(function () {
 
     Route::get('/admin', function () {
-        return redirect('/admin/list');
+        return redirect('/');
     });
     Route::get('/admin/list', [AdminController::class, 'list']);
     Route::get('/admin/list/{id}', [AdminController::class, 'addDelete']);

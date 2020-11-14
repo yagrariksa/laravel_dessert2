@@ -93,7 +93,7 @@ div#fotoproduct.imglist img:hover {
     margin-top: 20px;
     transform: translateX(20px);
     cursor: default;
-
+    width: fit-content;
 }
 
 .row.bag-1 .col input {
@@ -152,14 +152,34 @@ select {
     margin-bottom: 10px;
 }
 
+#descunderimg {
+    display: inline;
+}
+
+#descunderprice {
+    display: none;
+}
+
 
 @media(max-width: 800px) {
+
+    .container {
+        width: 90%;
+        margin: 0;
+    }
+
     .row {
-        padding: 10px;
+        padding: 0;
+    }
+
+    .row.bag-1 {}
+
+    .row.bag-1 .col.left {
+        margin-right: 10px;
     }
 
     .row.bag-1 .col.left img {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 
@@ -169,6 +189,10 @@ select {
 }
 
 @media(max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
     .row.bag-1 {
         flex-direction: column;
         align-items: center;
@@ -184,7 +208,27 @@ select {
         margin: 0;
     }
 
+    .row.bag-1 .col.left {
+        width: 100%;
+    }
+
+    .row.bag-1 .col.left img {
+        width: 95%;
+    }
+
     .row.bag-1 .col .product-price {
         margin-bottom: 0;
+    }
+
+    #descunderimg {
+        display: none;
+    }
+
+    #descunderprice {
+        display: inline;
+    }
+
+    form {
+        padding-left: 20px;
     }
 }
