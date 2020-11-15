@@ -1,7 +1,7 @@
 .container {
     width: fit-content;
     max-width: 90%;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .search {
@@ -15,7 +15,7 @@
 .credit {
     max-width: 500px;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     letter-spacing: 0.1em;
     margin-bottom: 50px;
@@ -27,11 +27,10 @@
 
 .main-info .title,
 .payment .title {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .main-info .kode-transaksi {
@@ -39,9 +38,14 @@
     font-weight: bold;
     line-height: 42px;
     letter-spacing: 0.1em;
+    margin-bottom: 20px;
 }
 
-.payment .subtitle,
+.payment .subtitle {
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
 .payment .payment-info {
     line-height: 28px;
     letter-spacing: 0.1em;
@@ -71,4 +75,15 @@
 
 .btn.btn-direct:hover {
     background-color: rgba(201, 162, 126, 0.5);
+}
+
+@media(max-width:500px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .container>div {
+        margin-bottom: 40px;
+    }
+
 }

@@ -54,3 +54,11 @@
 .main-content .btn.btn-save:hover {
     background-color: rgb(95, 255, 95);
 }
+
+@media(max-width:500px) {
+    .main-content {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+}

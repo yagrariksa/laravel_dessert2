@@ -7,6 +7,8 @@
 
     <link rel="icon" href="{{ asset('img/favico.png') }}">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/admin/adminnav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font.css') }}">
     @yield('css')
@@ -17,7 +19,8 @@
 
     <div class="navbar">
         <div class="logo">
-            <img src="{{ asset('img/logo.png') }}" alt="">
+            <img id="menubtn" src="{{ asset('img/menubtn.png') }}" alt="">
+            <img id="logobrand" src="{{ asset('img/logo.png') }}" alt="">
         </div>
         <a href="/logout" class="title text t-l t-uppercase t-bold" style="text-decoration: none;">
                 Admin Site
@@ -25,7 +28,7 @@
     </div>
 
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
             <a href="/admin/list"><div class="btn text t-uppercase t-sm {{ ($tipe == 'list') ? 'active' : ''}} ">List Barang</div></a>
             <a href="/admin/add"><div class="btn text t-uppercase t-sm {{ ($tipe == 'add') ? 'active' : ''}}">Tambah Barang</div></a>
             <a href="/admin/order"><div class="btn text t-uppercase t-sm {{ ($tipe == 'order') ? 'active' : ''}}">Atur Order</div></a>
@@ -39,6 +42,17 @@
     </div>
 
     @yield('js')
+    <script>
+        const menubtn = document.getElementById('menubtn');
+        const sidebar = document.getElementById('sidebar');
+        const bodey = document.querySelector('body');
+        menubtn.addEventListener('click',function(){
+            sidebar.classList.toggle('active');
+            menubtn.classList.toggle('active');
+            bodey.classList.toggle('menubaractive');
+            console.log("anjay");
+        });
+    </script>
     @livewireScripts
 </body>
 </html>

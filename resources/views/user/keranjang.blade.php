@@ -16,7 +16,7 @@
     @for ($i = 0; $i < sizeof($cart->items); $i++)
     <div class="card">
         <div class="col">
-            <h1>{{$cart->items[$i]->benda->name}}</h1>
+            <div class="title">{{$cart->items[$i]->benda->name}}</div>
             <div class="type">
                 {{$cart->items[$i]->benda->category}}
             </div>
@@ -31,12 +31,12 @@
             <a href="/delete/chart/{{$i}}" class="btn btn-delete">
                 Hapus Pesanan ini
             </a>
-            <h3 class="subtotal">
+            <div class="subtotal">
                 Rp. {{$cart->items[$i]->price}} * {{$cart->items[$i]->qty}}
-            </h3>
-            <h3 class="total">
+            </div>
+            <div class="total">
                 Rp. {{$cart->items[$i]->subtotal}}
-            </h3>
+            </div>
         </div>
     </div>
     @endfor

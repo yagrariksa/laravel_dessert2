@@ -23,9 +23,9 @@
         @foreach ($data as $d)
         <a href="/details/{{$d->id}}" class="card" style="text-decoration: none; ">
             <img src="https://drive.google.com/uc?export=view&id={{$d->imagelink}}" alt="{{$d->name}}">
-            <div style="text-align: center; text-size: 14px;">{{$d->category}}</div>
-            <h3>{{$d->name}}</h3>
-            <h4>Rp {{$d->price}}</h4>
+            <div class="category">{{$d->category}} desert</div>
+            <div class="title">{{$d->name}}</div>
+            <div class="subtitle">Rp {{$d->price}}</div>
         </a>
         @endforeach
     </div>
