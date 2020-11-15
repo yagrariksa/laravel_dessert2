@@ -16,7 +16,7 @@ class CreateBarangsTable extends Migration
         Schema::create('barangs', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->char('price', 17);
+            $table->decimal('price', 17, 2);
             $table->boolean('available')->default(true);
             $table->longText('desc')->nullable();
             $table->string('category');
