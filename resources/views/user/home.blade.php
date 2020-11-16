@@ -22,7 +22,11 @@
             @endfor
         </div>
         <div class="pengumuman">
+            @if ($promo !=null)
             {{$promo->link}}
+            @else
+            Selamat Datag                
+            @endif
         </div>
     </div>
 
