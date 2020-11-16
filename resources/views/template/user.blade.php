@@ -14,6 +14,8 @@
 </head>
 <body>
 
+    <div id="bg-valid"> </div>
+
     @livewire('live-search')
 
     @yield('content')

@@ -1,0 +1,50 @@
+.main-content .livewire {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form>* {
+    padding: 8px 10px;
+}
+
+.form button {
+    background-color: #1f1f1f;
+    color: white;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #68f4a3;
+    color: #1f1f1f;
+}
+
+.form .title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+tr,
+th,
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
+    ;
+}
+
+td button {
+    padding: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #9b9b9b;
+}

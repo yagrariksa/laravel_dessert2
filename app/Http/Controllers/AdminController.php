@@ -173,4 +173,18 @@ class AdminController extends Controller
             'tipe' => 'payment',
         ]);
     }
+
+    public function iklan()
+    {
+        return view('admin.iklan', [
+            'tipe' => 'iklan'
+        ]);
+    }
+
+    public function diskon()
+    {
+        return view('admin.diskon', [
+            'tipe' => 'dikson',
+        ]);
+    }
 }

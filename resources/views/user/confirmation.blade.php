@@ -101,6 +101,22 @@
                             Rp. {{$cart->total}}
                         </div>
                     </div>
+                    <div class="price">
+                        <div class="total-title">
+                            DISKON
+                        </div>
+                        <div class="total-price">
+                            {{$diskon->besar}} %
+                        </div>
+                    </div>
+                    <div class="price">
+                        <div class="total-title">
+                            TOTAL AKHIR
+                        </div>
+                        <div class="total-price">
+                            Rp. {{$diskon->akhiran}}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">

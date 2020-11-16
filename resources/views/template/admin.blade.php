@@ -34,6 +34,8 @@
             <a href="/admin/order"><div class="btn text t-uppercase t-sm {{ ($tipe == 'order') ? 'active' : ''}}">Atur Order</div></a>
             <a href="/admin/other"><div class="btn text t-uppercase t-sm {{ ($tipe == 'other') ? 'active' : ''}}">Pengaturan Lain</div></a>
             <a href="/admin/payment"><div class="btn text t-uppercase t-sm {{ ($tipe == 'payment') ? 'active' : ''}}">Rekening</div></a>
+            <a href="/admin/iklan"><div class="btn text t-uppercase t-sm {{ ($tipe == 'iklan') ? 'active' : ''}}">Iklan</div></a>
+            <a href="/admin/diskon"><div class="btn text t-uppercase t-sm {{ ($tipe == 'diskon') ? 'active' : ''}}">Diskon</div></a>
         </div>
         <div class="main-content">
             @yield('content')

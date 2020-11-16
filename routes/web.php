@@ -63,4 +63,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/other', [AdminController::class, 'other']);
 
     Route::get('/admin/payment', [AdminController::class, 'payment']);
+    Route::get('/admin/iklan', [AdminController::class, 'iklan']);
+    Route::get('/admin/diskon', [AdminController::class, 'diskon']);
 });

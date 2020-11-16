@@ -13,9 +13,16 @@
 <div class="container">
 
     <div class="iklan">
-        <div class="iklan-gambar"></div>
+        <div class="iklan-gambar">
+            @foreach ($iklanimg as $i)
+            <div class="gambariklan" style="background-image:url(http://drive.google.com/uc?export=view&id={{$i->link}})" alt=""> </div>
+            @endforeach
+            @for ($i = 0; $i < $dummy; $i++)
+            <div class="gambariklan" style="background-image:url(https://source.unsplash.com/1601x901/?object)" alt=""> </div>
+            @endfor
+        </div>
         <div class="pengumuman">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam temporibus explicabo recusandae illo expedita consequuntur!
+            {{$promo->link}}
         </div>
     </div>
 
@@ -31,4 +38,48 @@
     </div>
 </div>
 
+@endsection
+
+@section('js')
+    <script>
+        const iklangambar = document.querySelector('div.iklan-gambar');
+        const badang = document.querySelector('body');
+        if(badang.offsetWidth < 500){
+            iklangambar.style.height = String(iklangambar.offsetWidth / 2) + 'px';
+        }else if(badang.offsetWidth < 800){
+            iklangambar.style.height = '100%';
+        }else{
+            iklangambar.style.height = String(iklangambar.offsetWidth / 2.5) + 'px';
+        }
+        iklanan();
+        function iklanan(){
+            iklanbos();
+            setInterval(() => {
+                iklanbos()
+            }, 9000);
+        }
+        // setInterval(iklanbos(), 100)
+
+        function iklanbos(){
+            var pos0 = 'translateX(0%)';
+            var pos1 = 'translateX(-100%)';
+            var pos2 = 'translateX(-200%)';
+            var imgiklan = document.querySelectorAll('div.gambariklan');
+            geser(imgiklan,pos0);
+            setTimeout(() => {
+                geser(imgiklan,pos1);
+            }, 3000);
+            setTimeout(() => {
+                geser(imgiklan,pos2);
+            }, 6000);
+        }
+
+        function geser(objek, target){
+            for(var i = 0; i < objek.length; i++){
+                objek[i].style.transform = target;
+            }
+        }
+
+    </script>
+    
 @endsection

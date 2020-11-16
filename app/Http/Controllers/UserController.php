@@ -8,6 +8,8 @@ use App\Models\Cart;
 use App\Models\Category;
 use App\Models\Client;
 use App\Models\Custom;
+use App\Models\Diskon;
+use App\Models\Iklan;
 use App\Models\Pembayaran;
 use App\Models\Transaksi;
 use Illuminate\Http\Request;
@@ -20,8 +22,14 @@ class UserController extends Controller
     public function index()
     {
         $data = Barang::where('category', 'not like', "%custom%")->get();
+        $iklanimg = Iklan::where('tipe', 'iklan')->get();
+        $dummy = 3 - sizeof($iklanimg);
+        $promo = Iklan::where('tipe', 'pengumuman')->first();
         return view('user.home', [
             'data' => $data,
+            'iklanimg' => $iklanimg,
+            'promo' => $promo,
+            'dummy' => $dummy,
         ]);
     }
 
@@ -161,10 +169,16 @@ class UserController extends Controller
         }
 
         $metode = Pembayaran::latest()->get();
+        $diskon = Diskon::first();
+        if (!$diskon->status) {
+            $diskon->besar = 0;
+        }
+        $diskon->akhiran = $oldcart->total * ((100 - $diskon->besar) / 100);
 
         return view('user.confirmation', [
             'cart' => $oldcart,
             'metode' => $metode,
+            'diskon' => $diskon,
         ]);
     }
 
@@ -186,9 +200,18 @@ class UserController extends Controller
         $transaksi = new Transaksi();
         $transaksi->client_id = $client->id;
         $transaksi->payment = $request->metode;
-        $transaksi->status = 'menunggu pembayaran';
+        $transaksi->status = 'Menunggu Pembayaran';
         $transaksi->total = Session::get('cart')->total;
         $transaksi->totalqty = Session::get('cart')->qty;
+        $diskon = Diskon::first();
+        if ($diskon->status) {
+            $transaksi->diskon = $diskon->besar;
+        } else {
+            $transaksi->diskon = 0;
+        }
+        $akhir = $transaksi->total * ((100 - $transaksi->diskon) / 100);
+        $transaksi->totalsetelahdiskon = $akhir;
+
         $kode = $this->getName(8);
         while (Transaksi::where('kode', $kode)->first() != null) {
             $kode = $this->getName(8);

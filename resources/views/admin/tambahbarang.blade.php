@@ -10,7 +10,7 @@
 @endsection
 @section('content')
     
-        <form action="/admin/add" method="post">
+        <form id="formgundul" action="/admin/add" method="post">
             @csrf
             <div class="label text t-m t-uppercase">Nama Barang</div>
             <input type="text" name="name">
@@ -39,7 +39,9 @@
             <small>gunakan ID gambar seperti petunjuk yang sudah diberikan</small> <br>
             <input type="text" name="imagelink">
             <div class="label text t-m t-uppercase">ID Foto Barang 2</div>
-            <input type="text" name="imagelink2">
+            <div> 
+                <input type="text" name="imagelink2"> <div class="disablebtn" id="2"> disable </div>
+            </div>
             <div class="label text t-m t-uppercase">ID Foto Barang 3</div>
             <input type="text" name="imagelink3">
             <div class="label text t-m t-uppercase">ID Foto Barang 4</div>
@@ -67,4 +69,22 @@
 
 @section('js')
 <script src="{{ asset('js/selectform.js') }}"></script>
+    <script> 
+
+        const dsbtn = document.getElementsByClassName('disablebtn');
+
+        for(var i = 0; i < dsbtn.length; i++){
+            dsbtn[i].style.padding = '3px 5px';
+            dsbtn[i].style.border = '1px solid black';
+            dsbtn[i].style.width = 'fit-content';
+            dsbtn[i].style.cursor = 'pointer';
+            dsbtn[i].addEventListener('click',function(e) {
+                e.target.previousElementSibling.classList.contains('kosong');
+                e.target.previousElementSibling.setAttribute('class','kosong');
+                e.target.previousElementSibling.setAttribute('value','kosong');
+                e.target.previousElementSibling.setAttribute('disabled','true');
+            })
+        }
+    
+    </script>
 @endsection

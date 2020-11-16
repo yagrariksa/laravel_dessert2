@@ -5,15 +5,33 @@
                 <img id="mainimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink}}" alt="">
                 <div class="imglist" id="fotoproduct"> 
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink}}" alt="">
+                    @if ($data->imagelink2 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink2}}" alt="">
+                    @endif
+                    @if ($data->imagelink3 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink3}}" alt="">
+                    @endif
+                    @if ($data->imagelink4 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink4}}" alt="">
+                    @endif
+                    @if ($data->imagelink5 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink5}}" alt="">
+                    @endif
+                    @if ($data->imagelink6 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink6}}" alt="">
+                    @endif
+                    @if ($data->imagelink7 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink7}}" alt="">
+                    @endif
+                    @if ($data->imagelink8 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink8}}" alt="">
+                    @endif
+                    @if ($data->imagelink9 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink9}}" alt="">
+                    @endif
+                    @if ($data->imagelink10 != 'kosong')
                     <img class="detailimage" src="https://drive.google.com/uc?export=view&id={{$data->imagelink10}}" alt="">
+                    @endif
                 </div>
                 <div class="description" id="descunderimg">
                     {{$data->desc}}
