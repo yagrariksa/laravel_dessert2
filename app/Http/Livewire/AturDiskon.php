@@ -24,7 +24,7 @@ class AturDiskon extends Component
     {
         $data = Diskon::count();
         // dd($data);
-        if ($data < 2) {
+        if ($data == 1) {
             $data = Diskon::first();
         } else {
             $data = new Diskon();
