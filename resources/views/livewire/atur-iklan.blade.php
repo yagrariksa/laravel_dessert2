@@ -21,7 +21,9 @@
     <div class="pengumuman"> 
         <div class="title">Pengumuman</div>
         <p>
+            @if ($pengumuman != null)
             {{$pengumuman->link}}
+            @endif
             {{-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias totam odio illo eveniet debitis. --}}
         </p>
         <button wire:click='ganti'>edit</button> <br>
@@ -29,6 +31,8 @@
 
     <div class="iklan"> 
         <div class="title">foto</div>
+        @if ($iklan != null)
+            
         @foreach ($iklan as $i)
         <div class="objek">
             <small style="margin-top:5px;"> 
@@ -39,6 +43,9 @@
             <br>
         </div>
         @endforeach
+
+        @endif
+
     </div>
 
 
