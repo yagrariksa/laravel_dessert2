@@ -170,6 +170,9 @@ class UserController extends Controller
 
         $metode = Pembayaran::latest()->get();
         $diskon = Diskon::first();
+        if ($diskon == null) {
+            $diskon->status = false;
+        }
         if (!$diskon->status) {
             $diskon->besar = 0;
         }
