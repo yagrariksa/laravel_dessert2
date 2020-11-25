@@ -6,6 +6,7 @@
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/user/userhome.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/user/userhome.css') }}">
 @endsection
 
 @section('content')

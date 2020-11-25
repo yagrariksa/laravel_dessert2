@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" href="{{ asset('img/favico.png') }}">
     <link rel="stylesheet" href="{{ asset('css/user/nav.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/user/nav.css') }}">
     @yield('css')
     @livewireStyles
 </head>
